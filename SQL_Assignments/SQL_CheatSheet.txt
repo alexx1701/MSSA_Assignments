@@ -1,0 +1,35 @@
+use MyFirstDB;
+-- merp
+select * from sys.tables;
+create table myFirstTable (
+	Id int, -- first field is ID
+	firstColumn varchar,
+	secondColumn float,
+	thirdColumn int
+
+);
+-- CREATE / INSERT DATA
+
+-- this will delete a table. drop table myFirstTable;
+-- alter table myFirstTable
+-- add fourthColumn varchar(50) will add
+-- alter column firstColumn varchar(50)
+-- need to do alter whatever and then add, drop, alter, etc after :3
+
+
+
+insert into myFirstTable (Id, firstColumn, secondColumn, thirdColumn)
+values (1, null, null, null);
+
+select * from myFirstTable;
+
+-- select firstColumn as FirstName from myFirstTable will print the first column with that name
+
+--UPDATE / MODIFY DATA
+update myFirstTable
+set firstColumn = 'updated value 1'
+where Id = 1;
+
+-- DELETE DATA
+--delete from myFirstTable
+--where Id = 2 or whatever you get it
